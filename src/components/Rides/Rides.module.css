@@ -1,0 +1,74 @@
+
+
+
+.ride {
+    display: flex;
+    padding: 1.75rem 1.563rem;
+    background: var(--ride-bg);
+    position: relative;
+    border-radius: 10px;
+    margin-bottom: 0.813rem;
+} 
+
+._map {
+    max-width: 296px;
+    margin-right: 2.75rem;
+    border-radius: 5px;
+}
+
+._map img {
+    height: 100%;
+    width: 100%;
+}
+
+.ride_d p {
+    margin-bottom: 8px;
+    color: var(--gray-II);
+    font-size: 1.125rem;
+}
+
+.val {
+    color: var(--white);
+    
+}
+
+.ride_d p:last-child {
+    margin-bottom: 0;
+}
+
+.badges {
+    position: absolute;
+    top: 1.75rem;
+    right: 1.563rem;
+}
+
+.badges .badge {
+    display: inline-block;
+    padding: 4px 10px;
+    background: rgba(0, 0, 0, 0.56);
+    color: var(--white);
+    border-radius: 16px;
+    font-size: 0.75rem;
+    text-transform: capitalize;
+}
+
+.badges .badge:first-child {
+    margin-right: 1.5rem;
+}
+
+
+
+@media ( max-width: 768px ) {
+    .ride {
+        flex-wrap: wrap;
+    }
+}
+
+@media ( max-width: 567px ) {
+    ._map {
+        min-width: 100%;
+        margin-right: 0;
+        margin-bottom: 0.5rem; 
+    }
+
+}

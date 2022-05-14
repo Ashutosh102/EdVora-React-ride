@@ -1,0 +1,85 @@
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&display=swap');
+
+:root {
+  --body-bg: #292929;
+  --navbar-bg: #101010;
+  --drop-menu: #131313;
+  --ride-bg: #171717;
+  --label-bg: rgba(0, 0, 0, 0.56);
+  --white: #ffffff;
+  --gray: #D0CBCB; 
+  --gray-II: #CFCFCF;
+}
+
+html, body,
+*::after, *::before, * {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+  
+}
+
+#root {
+  background: var(--body-bg);
+  min-height: 100vh;
+}
+
+body {
+  font-size: 1rem;
+  margin: 0;
+  font-family: 'Inter', sans-serif;;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+ul {
+  list-style: none;
+}
+
+code {
+  font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
+    monospace;
+}
+
+.footer {
+  border-top: 1px solid #D0CBCB0F;
+  padding: 0.25rem 0;
+  text-align: center;
+
+}
+
+.footer .circle {
+  display: inline-block;
+  width: 5px;
+  height: 5px;
+  border-radius: 100%;
+  background: #D0CBCB0F;
+}
+
+/* global styles */
+
+.--container {
+  max-width: 1280px;
+  margin: 0 auto;
+  padding: 0 15px;
+}
+
+
+@media (max-width: 1323px) {
+  .--container {
+    max-width: 992px;
+  }
+}
+
+@media (max-width: 992px) {
+  .--container {
+    max-width: 768px;
+  }
+}
+
+
+@media (max-width: 768px) {
+  .--container {
+    max-width: 567px;
+  }
+}

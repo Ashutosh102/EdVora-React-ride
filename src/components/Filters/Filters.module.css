@@ -1,0 +1,155 @@
+.fltr_cm {
+    display: flex;
+    justify-content: space-between;
+    color: var(--text);
+    padding: 1.875rem 0;
+    color: var(--gray);
+}
+
+.fltr_cm .links {
+    list-style: none;
+    display: flex;
+    align-items: center;
+}
+
+.fltr_cm .links li {
+    cursor: pointer;
+    user-select: none;
+    margin-left: 2.75rem;
+    font-size: 1.125rem;
+    transition: color 150ms ease-in-out;
+}
+
+.fltr_cm .links li:hover {
+    color: rgba(255, 255, 255, 0.357);
+}
+
+.fltr_cm .links li:first-child {
+    margin-left: 0;
+}
+
+.fltr_cm .links .active,
+.fltr_cm .links .active:hover {
+    color: var(--white);
+    position: relative;
+}
+
+.active::before {
+    content: "";
+    position: absolute;
+    bottom: -6px;
+    left: 0;
+    height: 2px;
+    width: 100%;
+    background: var(--white);
+}
+
+.btn_filter .icon {
+    font-size: 1.5rem; 
+    display: flex;
+    margin-right: 8px;
+}
+
+.btn_filter {
+
+    display: flex;
+    align-items: center;
+    font-size: 1rem;
+    font-weight: 500;
+}
+
+.filter_relative {
+    position: relative;
+}
+
+div[role="button"] {
+
+    cursor: pointer;
+    user-select: none;
+}
+
+/* menu style */
+
+.drop_menu {
+    padding: 1.438rem 1.875rem;
+    background: #131313;
+    position: absolute;
+    top: 100%;
+    right: 0;
+    border-radius: 15px;
+    z-index: 1;
+    animation: fadeUp 150ms ease-in;
+
+}
+
+
+
+.drop_menu li {
+    margin-bottom: 12px;
+}
+
+.drop_menu li:first-child {
+
+    font-size: 20px;
+    padding-bottom: 12px;
+    margin-bottom: 20px;
+    border-bottom: 1px solid #CBCBCB;
+    color:#A5A5A5;
+}
+
+.drop_menu li:last-child {
+    margin-bottom: 0;
+}
+
+.control {
+    width: 10.528rem;
+    padding: 8px 12px;
+    background: #232323;
+    border-radius: 4.69px;
+    border: none;
+    color: var(--white);
+}
+
+
+@media ( max-width: 768px ) {
+    .fltr_cm {
+        flex-wrap: wrap;
+        padding-bottom: 1.875rem 0;
+    }
+
+    .filter_relative {
+        order: -1;
+        margin-left: auto;
+        margin-bottom: 1rem;
+    }
+}
+
+@media ( max-width: 576px ) {
+    .fltr_cm {
+        flex-direction: column;
+    }
+
+    .links {
+        flex-direction: column;
+    }
+
+    .links li {
+        margin-left: 0;
+        margin-bottom: 1rem;
+    }
+
+    .links li:last-child {
+        margin-left: 0;
+    }
+}
+
+@keyframes fadeUp {
+    0%{
+        opacity: 0;
+        transform: translateY(25px);
+    }
+    100% {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
